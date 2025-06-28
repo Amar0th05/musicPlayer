@@ -62,38 +62,36 @@ const handleSeek = (e) => {
 
 
         {/* Album Art with Circular Animation */}
-        <div className="relative w-80 h-80 mx-auto mb-8 overflow-hidden rounded-full shadow-2xl">
-  {/* Rotating circular border */}
-  <div className={`absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 p-1 ${isPlaying ? 'animate-spin' : ''}`} style={{ animationDuration: '8s' }}>
-    <div className="w-full h-full rounded-full bg-black/30 backdrop-blur-xl"></div>
-  </div>
+        <div className="relative mb-8">
+          {/* Rotating circular border */}
+          <div className={`absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500  ${isPlaying ? 'animate-spin' : ''}`} style={{animationDuration: '8s'}}>
+            <div className="w-full h-full rounded-full bg-black/30 backdrop-blur-xl"></div>
+          </div>
 
-  {/* Pulsing outer ring */}
-  <div className={`absolute inset-0 rounded-full border-2 border-purple-400/50 ${isPlaying ? 'animate-ping' : ''}`} style={{ animationDuration: '2s' }}></div>
+          {/* Pulsing outer ring */}
+          <div className={`absolute inset-0 rounded-full border-2 border-purple-400/50 ${isPlaying ? 'animate-ping' : ''}`} style={{animationDuration: '2s'}}></div>
 
-  {/* Album image */}
-  <div className="relative z-10 w-full h-full rounded-full overflow-hidden">
-    <img
-      src={currentSong.cover}
-      alt={currentSong.title}
-      className={`w-full h-full object-cover transition-transform duration-1000 ${isPlaying ? 'animate-pulse scale-105' : ''}`}
-    />
+          {/* Album image */}
+          <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl relative z-10">
+            <img 
+              src={currentSong.cover} 
+              alt={currentSong.title}
+              className={`w-full h-full object-cover transition-transform duration-1000 ${isPlaying ? 'animate-pulse scale-105' : ''}`}
+            />
 
-    {/* Background heart pulse */}
-    {isLiked && (
-      <div className="absolute inset-0 flex items-center justify-center z-0">
-        <div className="w-40 h-40 bg-pink-400 rounded-full opacity-20 animate-ping"></div>
-      </div>
-    )}
-  </div>
+            {/* Background heart pulse */}
+            {isLiked && (
+              <div className="absolute inset-0 flex items-center justify-center z-0">
+                <div className="w-40 h-40 bg-pink-400 rounded-full opacity-20 animate-ping"></div>
+              </div>
+            )}
+          </div>
 
-  {/* Center dot */}
-  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg z-20"></div>
+          {/* Center dot */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg z-20"></div>
 
-  {/* Gradient overlay */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-full"></div>
-</div>
-
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-full"></div>
+        </div>
 
         {/* Song Info */}
         <div className="text-center mb-8">

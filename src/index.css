@@ -5,9 +5,6 @@
 body{
   background-color: black;
 }
-img{
-  object-fit: cover;
-}
 
 @layer utilities {
   .animate-spin-slow {
