@@ -43,7 +43,7 @@ const handleSeek = (e) => {
   const progress = duration ? (currentTime / duration) * 100 : 0;
 
   return (
-<div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
+<div className="min-h-screen bg-gradient-to-br from-pink-500 via-fuchsia-600 to-purple-700 flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
   <div className="bg-black/30 backdrop-blur-xl rounded-3xl p-6 sm:p-8 w-full max-w-sm sm:max-w-md shadow-2xl border border-white/10 relative z-10">
     {/* Back Button */}
     <button

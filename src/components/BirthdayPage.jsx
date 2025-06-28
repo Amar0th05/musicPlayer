@@ -26,13 +26,14 @@ const BirthdayPage = ({ onStart }) => {
 
       {/* Main content with staggered fade-in */}
       <div className="text-center z-10 relative">
-        <div className="mb-8 animate-bounce opacity-0 animate-fade-in animation-delay-500">
-          <Gift className="w-24 h-24 text-white mx-auto mb-4" />
+        <div className="mb-8 opacity-0 animate-fade-in animation-delay-500">
+          <Gift className="w-24 h-24 text-white mx-auto mb-4 animate-bounce" />
         </div>
 
-        <h1 className="text-6xl font-bold text-white mb-4 opacity-0 animate-fade-in animation-delay-1000">
-          Happy Birthday Aarthy!
-        </h1>
+<h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-white mb-4 opacity-0 animate-fade-in animation-delay-1000 drop-shadow-lg">
+  <span className='text-pink-400'>🎉</span> Happy Birthday Aarthy! <span className='text-pink-400'>💖</span>
+</h1>
+
 
         <div className="mb-8 opacity-0 animate-fade-in animation-delay-1500">
           <div className="w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-8 border-white shadow-2xl animate-pulse">
@@ -52,10 +53,11 @@ const BirthdayPage = ({ onStart }) => {
           onClick={onStart}
           className="bg-white text-purple-600 px-12 py-4 rounded-full text-xl font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300 shadow-lg opacity-0 animate-fade-in animation-delay-2500"
         >
-          <div className="flex items-center gap-3">
-            <Music className="w-6 h-6" />
-            Start Your Musical Journey Mam
-          </div>
+<div className="flex items-center gap-3 text-lg sm:text-xl font-semibold bg-gradient-to-r from-pink-400 via-fuchsia-500 to-purple-600 text-transparent bg-clip-text drop-shadow-md animate-fade-in">
+  <Music className="w-6 h-6 text-pink-500 animate-bounce-slow" />
+  <span>Start Your Musical Journey, Mam 🎶</span>
+</div>
+
         </button>
       </div>
 
