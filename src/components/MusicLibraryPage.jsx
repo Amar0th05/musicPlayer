@@ -24,7 +24,7 @@ const cardVariant = {
 const MusicLibraryPage = ({ songsData = {}, playlists = [], playSong = () => {} }) => {
   return (
     <motion.div
-      className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-8"
+      className="min-h-screen bg-gradient-to-br from-pink-500 to-purple-500 p-8"
       initial="hidden"
       animate="show"
       variants={containerVariant}

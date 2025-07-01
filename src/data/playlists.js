@@ -3,7 +3,7 @@
 import songsData from './songsData';
 import img1 from '../assets/images/im1.jpg';
 import img2 from '../assets/images/im2.jpg';
-import img3 from '../assets/images/im3.jpg';
+import img3 from '../assets/images/img3.jpg';
 
 
 const playlists = [
